@@ -1,0 +1,14 @@
+body {background-color:  hsl(217, 54%, 11%); display: flex;justify-content: center; font-family: 'Outfit', sans-serif;}
+div {background-color: hsl(216, 50%, 16%); text-align: center; width:250px; padding: 15px 15px 25px; border-radius: 3%; position: relative; top: 60px;}
+.ethereum-img {height : 250px; width: 250px; margin: auto; border-radius: 3%}
+.profile-picture {border: 2px solid; border-radius: 50%; border-color: #ffffff; width: 32px; height:32px;}
+hr { width: 100%; color:hsl(215, 32%, 27%); border-top: 0px;}
+.text {width: 100%; margin: auto;}
+span {color:  hsl(0, 0%, 100%);}
+h4 {color: hsl(0, 0%, 100%); text-align: left;}
+p {color:  hsl(215, 51%, 70%);}
+.end {position: relative; right: 12px; bottom: 8px; }
+.ethereum {color: #00fff8; display:inline-block; text-align: left; position: relative; right: 33px}
+.time {display: inline-block; text-align: right; position: relative; left: 33px; font-weight: 300;}
+span:hover { color: #00fff8;}
+h4:hover {color: #00fff8}
