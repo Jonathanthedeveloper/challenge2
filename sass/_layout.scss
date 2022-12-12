@@ -1,0 +1,20 @@
+.nft__wrapper {
+    background-color: $dark-blue;
+    width: 30rem;
+    @include centerDiv;
+    padding: 2rem;
+    border-radius: 1rem;
+
+   
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  @include centerDiv;
+  top: 95%;
+  color: $White;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b; }
+
+.nft {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem; }
+  .nft__img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    position: relative; }
+    .nft__img--caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transform: translate(-50%, -50%) translateY(3rem);
+      transition: all 0.5s;
+      display: block;
+      background-color: rgba(0, 255, 247, 0.2);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer; }
+    .nft__img:hover + .nft__img--caption, .nft__img--caption:hover {
+      opacity: 1;
+      transform: translate(-50%, -50%) translateY(0); }
+  .nft__info {
+    margin-top: 1rem; }
+    .nft__info--name {
+      color: white;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2;
+      transition: all 0.4s;
+      display: inline-block;
+      cursor: pointer; }
+      .nft__info--name:hover {
+        color: #00fff7; }
+    .nft__info--desc {
+      color: #8bacda; }
+    .nft__info--cta {
+      display: flex;
+      align-items: center;
+      margin: 1.5rem 0; }
+    .nft__info--price {
+      margin: 0 auto 0 0.5rem;
+      color: #00fff7; }
+    .nft__info--time-left {
+      margin-left: 0.5rem;
+      color: #8bacda; }
+    .nft__info--owner {
+      display: flex;
+      border-top: 1px solid #2f415b;
+      align-items: center;
+      padding: 1rem 0; }
+      .nft__info--owner-img {
+        height: 4rem;
+        margin-right: 1rem;
+        border: 1px solid white;
+        border-radius: 50%; }
+      .nft__info--owner-name .main {
+        color: #8bacda; }
+      .nft__info--owner-name .sub {
+        color: white;
+        cursor: pointer; }
+        .nft__info--owner-name .sub:hover {
+          color: #00fff7; }
+
+.nft__wrapper {
+  background-color: #14253d;
+  width: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 1rem; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 95%;
+  color: white; }
+
+.attribution a {
+  color: #3e52a3; }

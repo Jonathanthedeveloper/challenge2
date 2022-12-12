@@ -1,0 +1,18 @@
+
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+$Very-dark-blue : hsl(217, 54%, 11%); //(main BG)
+$dark-blue : hsl(216, 50%, 16%); // (card BG)
+$blue: hsl(215, 32%, 27%); // (line)
+$White: hsl(0, 0%, 100%);
+
+// MIXINS
+
+@mixin centerDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+

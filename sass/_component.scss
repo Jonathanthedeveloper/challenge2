@@ -1,0 +1,102 @@
+.nft {
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1rem;
+
+ 
+
+  &__img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1/1;
+    position: relative;
+    
+    &--caption {
+        @include centerDiv;
+        opacity: 0;
+        transform: translate(-50%, -50%) translateY(3rem);
+        transition: all 0.5s;
+        display: block;
+        background-color: rgba($Cyan,.2);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      
+    }
+
+    &:hover + &--caption,
+    &--caption:hover {
+      opacity: 1;
+      transform: translate(-50%, -50%) translateY(0);
+    }
+  }
+
+  &__info {
+    margin-top: 1rem;
+
+    &--name {
+      color: $White;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2;
+      transition: all 0.4s;
+      display: inline-block;
+      cursor: pointer;
+
+      &:hover {
+        color: $Cyan;
+      }
+    }
+
+      &--desc {
+        color: $Soft-blue;
+      }
+
+      &--cta {
+        display: flex;
+        align-items: center;
+        margin: 1.5rem 0;
+      }
+
+      &--price {
+        margin: 0 auto 0 0.5rem;
+        color: $Cyan;
+      }
+      &--time-left {
+        margin-left: 0.5rem;
+        color: $Soft-blue;
+      }
+
+      &--owner {
+        display: flex;
+        border-top: 1px solid $blue;
+        align-items: center;
+        padding: 1rem 0;
+
+        &-img {
+          height: 4rem;
+          margin-right: 1rem;
+          border: 1px solid $White;
+          border-radius: 50%;
+        }
+        &-name {
+          .main {
+            color: $Soft-blue;
+          }
+          .sub {
+            color: $White;
+            cursor: pointer;
+
+            &:hover {
+              color: $Cyan;
+            }
+          }
+        }
+      
+    }
+  }
+}
